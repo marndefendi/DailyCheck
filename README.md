@@ -1,12 +1,7 @@
 # Aplicativo DailyCheck
 
 ## Descrição do projeto
-Um projeto que envolve ligação entre Backend e Frontend, gerando um site chamado DailyCheck, com o objetivo de procurar cidades e mostrar o clima naquele momento e adicionar tarefas, com a opção de editar e excluir depois de salvar.
-
-## Print das Telas
-|![img](/assets/tela1.png)|![img](/assets/tela2.png)|![img](/assets/tela3.png)
-|:-:|:-:|:-:|
-|Tela 01|Tela 02|Tela 03
+O DailyCheck é um site que integra frontend e backend para permitir ao usuário buscar cidades e visualizar o clima em tempo real, além de criar, editar e excluir tarefas. Seu objetivo é reunir, em um único lugar, informações úteis do dia a dia com praticidade e organização.
 
 ## Tecnologias
 Tecnologias utilizados:

@@ -1,68 +1,80 @@
 body {
-  background: rgb(205, 200, 216);
-  font-family: Arial;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #f5f5f5;
 }
 
 .menu {
-  background: rgb(23, 7, 67);
-  color: rgb(221, 212, 239);
-  padding: 15px;
+  background: #111827;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-}
-
-.menu h2 {
-  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .menu a {
-  color: rgba(234, 218, 207, 0.853);
-  margin: 0 10px;
+  color: #c7d2fe;
+  margin: 0 12px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #818cf8;
 }
 
 .menu button {
-  background: rgba(199, 182, 219, 0.429);
-  color: rgb(33, 17, 58);
+  background: #6366f1;
+  color: white;
   border: none;
-  padding: 8px 15px;
-  border-radius: 20px;
+  padding: 8px 18px;
+  border-radius: 25px;
   cursor: pointer;
   margin-left: 10px;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: #4f46e5;
 }
 
 .titulo {
   text-align: center;
-  margin: 30px 0 15px 0;
+  margin: 40px 0 20px 0;
+  font-size: 28px;
 }
 
 .container {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
 }
 
+/* CARD */
 .card {
-  background: rgba(42, 22, 86, 0.175);
-  border: 2px solid rgb(28, 17, 61);
+  background: #1f2937;
   border-radius: 20px;
   padding: 15px;
   width: 250px;
   cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s;
 }
 
 .card:hover {
-  background: #ece5fa7b;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
 }
 
 .card img {
   width: 100%;
   height: 150px;
   border-radius: 15px;
-  filter: grayscale(100%);
+  object-fit: cover;
 }
 
 .card h3 {
@@ -70,40 +82,51 @@ body {
 }
 
 .card p {
-  margin: 5px 0;
   font-size: 14px;
+  color: #d1d5db;
 }
 
 .card button {
-  background: rgb(39, 12, 89);
-  color: rgb(251, 236, 228);
+  background: #6366f1;
+  color: white;
   border: none;
-  padding: 5px 15px;
+  padding: 7px 15px;
   border-radius: 15px;
   cursor: pointer;
   margin-top: 10px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #4f46e5;
 }
 
 .clima-box {
   text-align: center;
-  margin: 20px;
+  margin: 30px;
 }
 
 .clima-box input {
   padding: 10px;
-  border-radius: 20px;
-  border: 2px solid rgb(32, 13, 70);
+  border-radius: 5px;
+  border: none;
   width: 250px;
-  background-color: rgba(148, 129, 171, 0.4);
+  outline: none;
 }
 
 .clima-box button {
   padding: 10px 20px;
-  border-radius: 20px;
-  border: 2px solid rgb(32, 19, 76);
-  background: rgba(74, 58, 99, 0.175);
+  border-radius: 5px;
+  border: none;
+  background: #6366f1;
+  color: white;
   cursor: pointer;
   margin-left: 5px;
+}
+
+.clima-box button:hover {
+  background: #4f46e5;
 }
 
 #modal {
@@ -112,32 +135,37 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
 
 .modal-caixa {
-  background: rgb(231, 224, 220);
-  width: 300px;
-  margin: 100px auto;
+  background: #111827;
+  width: 320px;
+  margin: 120px auto;
   padding: 20px;
-  border-radius: 20px;
-  border: 2px solid rgb(64, 31, 17);
-  position: relative;
-  z-index: 1000;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.modal-caixa input,.modal-caixa textarea {
+.modal-caixa input,
+.modal-caixa textarea {
   width: 90%;
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px;
-  border: 1px solid rgb(42, 15, 67);
+  border: none;
+  margin: 5px 0;
 }
 
 .modal-caixa button {
-  padding: 8px 20px;
-  border-radius: 15px;
-  border: 2px solid rgb(42, 17, 58);
-  background: rgb(231, 223, 219);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #6366f1;
+  color: white;
   cursor: pointer;
   margin: 5px;
+}
+
+.modal-caixa button:hover {
+  background: #4f46e5;
 }
