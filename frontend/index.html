@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu">
+  <h2>DailyCheck</h2>
+  <a href="index.html">Home</a>
+  <a href="tarefas.html">Tarefas</a>
+</div>
+
+<h1 class="titulo">Clima</h1>
+<div class="clima-box">
+  <input id="cidade" placeholder="Digite a cidade">
+  <button onclick="buscarClima()">Buscar</button>
+  <button onclick="limparClima()">Limpar</button>
+</div>
+<div id="clima-container" class="container"></div>
+
+<h1 class="titulo">Tarefas</h1>
+<div id="tarefas-container" class="container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

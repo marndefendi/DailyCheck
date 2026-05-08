@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu">
+  <h2>Daily Check</h2>
+  <a href="index.html">Home</a>
+  <a href="tarefas.html">Tarefas</a>
+  <button onclick="abrirModalCriar()">Nova Tarefa</button>
+</div>
+
+<h1 class="titulo">Tarefas Cadastradas</h1>
+<div id="tarefas-container" class="container"></div>
+
+<div id="modal" style="display:none;">
+  <div class="modal-caixa">
+    <h2 id="tituloModal">Nova Tarefa</h2>
+    <input id="idTarefa" type="hidden">
+    <input id="nome" placeholder="Nome da tarefa"><br><br>
+    <input id="inicio" type="date"><br><br>
+    <input id="fim" type="date"><br><br>
+    <textarea id="descricao" placeholder="Descrição"></textarea><br><br>
+    <input id="imagem" type="text" placeholder="URL da imagem"><br><br>
+    <button onclick="salvarTarefa()">Salvar</button>
+    <button onclick="fecharModal()">Cancelar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
